@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:startOffset="1100"
+    android:fillAfter="true"
+    >
+    <!-- Con "startOffset" indicamos que comience la acción con un tiempo de retardo. Como lo hemos indicado
+         dentro de set, esto valdrá para todas las acciones que realizará la manzana -->
+    <!-- Con "fillAfter" indicamos que la manzana se quede grande y no vuelva a su tamaño inicial al terminar la acción.
+         También lo indicaremos dentro del set para que actúe sobre todas las acciones -->
+
+
+
+    <!-- A continuación indicamos que la manzana rote durante un tiempo determinado, el eje de rotación y los grados de giro -->
+
+    <rotate
+        android:duration="1000"
+
+        android:pivotX="50%"
+        android:pivotY="50%"
+
+        android:fromDegrees="0"
+        android:toDegrees="360"
+        />
+
+    <!-- A continuación indicamos que la manzana aumente de tamaño durante un tiempo determinado, desde su tamaño original al tamaño final,
+         tanto en el eje X como en el Y -->
+
+    <scale
+        android:duration="1150"
+
+        android:fromXScale="1"
+        android:toXScale="2"
+
+        android:fromYScale="1"
+        android:toYScale="2"
+    />
+
+    <!-- A continuación indicamos que la manzana se desplace durante un tiempo determinado, desde un punto de partida a su posición 0,
+         que es la posición que hemos situado manualmente a la manzana en la pantalla -->
+
+    <translate
+        android:duration="1200"
+
+        android:fromYDelta="-955"
+        android:toYDelta="0"
+
+        android:fromXDelta="-400"
+        android:toXDelta="0"
+        />
+
+</set>

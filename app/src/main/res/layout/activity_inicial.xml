@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inicial">
+
+    <!-- A continuación indicamos que la ImageView contendrá la imagen del logo y sus características de posicionamiento -->
+
+    <!-- A continuación añadimos un botón que contendrá la imagen del logo  de facebook, junto con un texto y sus características de posicionamiento -->
+
+    <!-- A continuación añadimos un botón que contendrá la imagen del logo  de google, junto con un texto y sus características de posicionamiento -->
+
+    <!-- A continuación añadimos un botón con un texto y sus características de posicionamiento -->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="269dp"
+        android:layout_height="255dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logazo" />
+
+    <Button
+        android:id="@+id/botonGoogle"
+        android:layout_width="318dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/google"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/boton_google"
+        android:textColor="@color/gris_text_boton"
+        app:cornerRadius="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:strokeColor="@color/borde_boton"
+        app:strokeWidth="1sp" />
+
+    <Button
+        android:id="@+id/botonEmail"
+        android:layout_width="318dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/verde_email_cliente"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/boton_email"
+        android:textColor="@color/dunkel_text_boton"
+        app:cornerRadius="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonGoogle" />
+
+    <!-- A continuación añadimos texto y sus características de posicionamiento -->
+
+    <!-- A continuación añadimos otro texto que se podrá pulsar para acceder al activity_login y sus características de posicionamiento -->
+
+    <TextView
+        android:id="@+id/text_cliente1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/texto_cliente1"
+        android:textColor="@color/texto_cliente1"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/textLogin"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonEmail" />
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="55dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/textLogin"
+        android:textColor="@color/textLogin"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_cliente1"
+        app:layout_constraintTop_toBottomOf="@+id/botonEmail" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

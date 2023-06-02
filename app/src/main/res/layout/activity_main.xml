@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+    <TextView
+        android:id="@+id/texto_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/mangaka"
+        android:text="@string/text1_main"
+        android:textColor="@color/texto_registro"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/texto_registro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mangaka"
+        android:text="@string/text2_main"
+        android:textColor="@color/texto_registro"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_registro" />
+
+    <Button
+        android:id="@+id/comprar"
+        android:layout_width="318dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/cesta"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/boton1_main"
+        android:textColor="@color/gris_text_boton"
+        app:cornerRadius="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_registro2"
+        app:strokeColor="@color/borde_boton"
+        app:strokeWidth="1sp" />
+
+
+
+
+    <Button
+        android:id="@+id/vender"
+        android:layout_width="318dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/sell"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/boton2_main"
+        android:textColor="@color/gris_text_boton"
+        app:cornerRadius="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comprar"
+        app:strokeColor="@color/borde_boton"
+        app:strokeWidth="1sp" />
+
+    <Button
+        android:id="@+id/MiCuenta"
+        android:layout_width="318dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/user"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/boton3_main"
+        android:textColor="@color/gris_text_boton"
+        app:cornerRadius="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vender"
+        app:strokeColor="@color/borde_boton"
+        app:strokeWidth="1sp" />
+
+
+    <Button
+        android:id="@+id/salir"
+        android:layout_width="318dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/verde_email_cliente"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/boton4_main"
+        android:textColor="@color/dunkel_text_boton"
+        app:cornerRadius="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MiCuenta"
+        app:layout_constraintVertical_bias="0.406"
+        app:strokeColor="@color/borde_boton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

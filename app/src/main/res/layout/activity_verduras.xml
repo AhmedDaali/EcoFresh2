@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color2"
+    tools:context=".Verduras">
+
+    <TextView
+        android:id="@+id/texto_verduras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/mangaka"
+        android:text="@string/text_principal_verduras"
+        android:textColor="@color/texto_registro"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <AutoCompleteTextView
+        android:id="@+id/txt_auto"
+        android:layout_width="260dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hint_auto"
+        android:padding="16dp"
+        android:textColorHint="@color/texto_autocomplete"
+        android:textColorLink="#3C3A3A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_verduras" />
+
+    <ImageButton
+        android:id="@+id/boton_flechaV"
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Boton de flecha"
+        app:layout_constraintStart_toEndOf="@+id/txt_auto"
+        app:layout_constraintTop_toBottomOf="@+id/texto_verduras"
+        app:srcCompat="@drawable/flecha" />
+
+    <ImageButton
+        android:id="@+id/boton_espinacas"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Boton de espinacas"
+        app:layout_constraintEnd_toStartOf="@+id/boton_lechuga"
+        app:layout_constraintHorizontal_bias="0.335"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_espinacas"
+        app:srcCompat="@drawable/espinacas" />
+
+    <ImageButton
+        android:id="@+id/boton_lechuga"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="boton de lechuga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/boton_espinacas"
+        app:layout_constraintTop_toBottomOf="@+id/text_lechuga"
+        app:srcCompat="@drawable/lechuga" />
+
+    <ImageButton
+        android:id="@+id/boton_repollo"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Botón de repollo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/boton_brocoli"
+        app:layout_constraintTop_toBottomOf="@+id/text_repollo"
+        app:srcCompat="@drawable/repollo" />
+
+    <ImageButton
+        android:id="@+id/boton_brocoli"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Botón de brocoli"
+        app:layout_constraintEnd_toStartOf="@+id/boton_repollo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_brocoli"
+        app:srcCompat="@drawable/brocoli" />
+
+    <ImageButton
+        android:id="@+id/boton_apio"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Botón de apio"
+        app:layout_constraintEnd_toStartOf="@+id/boton_grelos"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_apio"
+        app:srcCompat="@drawable/apio" />
+
+
+    <ImageButton
+        android:id="@+id/boton_grelos"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Botón de grelos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@+id/boton_apio"
+        app:layout_constraintTop_toBottomOf="@+id/text_grelos"
+        app:srcCompat="@drawable/grelos" />
+
+    <TextView
+        android:id="@+id/text_espinacas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/button_espinacas"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/text_lechuga"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_auto" />
+
+    <TextView
+        android:id="@+id/text_lechuga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:background="@color/transparent_imageButton"
+        android:text="@string/button_lechuga"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_espinacas"
+        app:layout_constraintTop_toBottomOf="@+id/txt_auto" />
+
+    <TextView
+        android:id="@+id/text_repollo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_repollo"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_brocoli"
+        app:layout_constraintTop_toBottomOf="@+id/boton_lechuga" />
+
+    <TextView
+        android:id="@+id/text_brocoli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/button_brocoli"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/boton_repollo"
+        app:layout_constraintEnd_toStartOf="@+id/text_repollo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_espinacas"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text_apio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_apio"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/text_grelos"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_brocoli" />
+
+    <TextView
+        android:id="@+id/text_grelos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_grelos"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_apio"
+        app:layout_constraintTop_toBottomOf="@+id/boton_repollo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

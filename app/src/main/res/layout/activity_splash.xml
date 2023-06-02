@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Splash">
+
+    <!-- En el "background", indicamos que el color que debe tener la pantalla de splash tenga los colores guardados
+         en el archivo "res/drawable/bg_color" -->
+
+
+    <!-- A continuación indicamos que la ImageView contendrá la imagen del logo y sus características de posicionamiento -->
+
+    <!-- A continuación indicamos que la TextView contendrá la palabra Eco y sus características de posicionamiento -->
+
+    <!-- A continuación indicamos que la TextView contendrá la palabra Fresh y sus características de posicionamiento -->
+
+    <!-- A continuación indicamos que la ImageView contendrá la imagen de la manzana y sus características de posicionamiento -->
+
+    <!-- A continuación indicamos que la TextView contendrá
+     la palabra Fresh y sus características de posicionamiento -->
+
+    <!-- A continuación indicamos que la ImageView contendrá la
+     imagen de la manzana y sus características de posicionamiento -->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="349dp"
+        android:layout_height="308dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        app:srcCompat="@drawable/logazo" />
+
+    <TextView
+        android:id="@+id/titulo_eco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sunfice"
+        android:text="@string/ecologico"
+        android:textColor="@color/text_ecofresh"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/logo"
+        app:layout_constraintEnd_toStartOf="@+id/titulo_fresh"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.755" />
+
+    <TextView
+        android:id="@+id/titulo_fresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sunfice"
+        android:text="@string/fresco"
+        android:textColor="@color/text_ecofresh"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.635"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.755" />
+
+    <ImageView
+        android:id="@+id/apple"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.660"
+        app:srcCompat="@drawable/manzanarellena" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

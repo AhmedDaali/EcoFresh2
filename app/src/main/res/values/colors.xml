@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--PALETA POR DEFECTO-->
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+
+    <!-- Paleta para la activity_splash -->
+
+    <color name="text_ecofresh">#4FAA57</color>
+    <color name="center">#54CA59</color>
+    <color name="verde">#CB3FCA43</color>
+
+    <!-- Paleta para la activity_cliente -->
+
+    <color name="white">#FFFFFFFF</color> <!-- Utilizado también en la activity_splash en el gradient -->
+    <color name="gris_text_boton">#666666</color>
+    <color name="borde_boton">#3C3A3A</color>
+    <color name="verde_email_cliente">#A6D6A7</color> <!-- activity_registro - activity_login -->
+    <color name="dunkel_text_boton">#334234</color> <!-- activity_registro - activity_login -->
+    <color name="texto_cliente1">#4A4A4A</color> <!-- activity_login -->
+    <color name="textLogin">#05A70B</color>
+
+    <!-- Paleta para la activity_registro -->
+
+    <color name="texto_registro">#4D6346</color> <!-- activity_login -->
+
+    <color name="hint_registro">#070606</color> <!-- activity_login -->
+
+    <color name="CheckBox_negro">#454545</color>
+    <color name="CheckBox_verde">#038008</color>
+
+    <!-- Paleta para la activity_main -->
+
+    <color name="main_center">#F3E5C0</color>
+    <color name="main_start">#C9E8CA</color>
+
+    <!-- Paleta para la activity_selection -->
+
+    <color name="texto_autocomplete">#4E4747</color>
+    <color name="transparent_imageButton">#00000000</color>
+    <color name="textColorLink">#3C3A3A</color>
+
+    <!-- Paleta para la activity_venta -->
+
+    <color name="datosVenta">#6BC7FFDA</color>
+    <color name="productos">#F3B76B</color>
+
+    <!-- Paleta para la activity_camara -->
+
+    <color name="btn_camera">#1A5E32</color>
+
+    <!-- Paleta para la activity_camara -->
+
+    <color name="fondo_verde">#F1F9F1</color>
+
+    <!-- Paleta para la activity_cuenta_usuario -->
+
+    <color name="separaciones_cuenta">#80CCFA28</color>
+    <color name="marcadores_compras_ventas">#3C06EA80</color>
+
+    <!-- color autocompletado -->
+
+    <color name="autocompletado">#3C3A3A</color>
+
+    <!-- color fondo activity_ultimo_paso -->
+
+    <color name="fondo2">#CEF8EDED</color>
+
+    <color name="pago">#CEFF2020</color>
+
+
+
+</resources>

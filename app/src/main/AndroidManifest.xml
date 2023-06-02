@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EcoFresh"
+        tools:targetApi="31">
+        <activity
+            android:name=".ImagenCompra"
+            android:exported="false" />
+        <activity
+            android:name=".ProductosVenta"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmCompra"
+            android:exported="false" />
+        <activity
+            android:name=".UltimoPasoCompra"
+            android:exported="false" />
+        <activity
+            android:name=".Muestrario"
+            android:exported="false" />
+        <activity
+            android:name=".Hortalizas"
+            android:exported="false" />
+        <activity
+            android:name=".Legumbres"
+            android:exported="false" />
+        <activity
+            android:name=".Verduras"
+            android:exported="false" />
+        <activity
+            android:name=".Frutas"
+            android:exported="false" />
+        <activity
+            android:name=".VentasRealizadas"
+            android:exported="false" />
+        <activity
+            android:name=".Compras"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".Edicion"
+            android:exported="false" />
+        <activity
+            android:name=".ShowPhotoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Condiciones"
+            android:exported="false" />
+        <activity
+            android:name=".CuentaUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmVenta"
+            android:exported="false" />
+        <activity
+            android:name=".VentaAguardar"
+            android:exported="false" />
+        <activity
+            android:name=".Selection"
+            android:exported="false" />
+        <activity
+            android:name=".Inicial"
+            android:exported="false" />
+        <activity
+            android:name=".Registro"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" /> <!-- Agrega esta etiqueta de proveedor -->
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="${applicationId}.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+    </application>
+
+</manifest>

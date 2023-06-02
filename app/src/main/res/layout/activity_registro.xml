@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+
+    <!-- Este es el primer texto inicial de esta activity -->
+
+    <!-- Esta es el segundo texto inicial de esta activity -->
+
+    <TextView
+        android:id="@+id/texto_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/mangaka"
+        android:text="@string/texto_registro"
+        android:textColor="@color/texto_registro"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/texto_registro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mangaka"
+        android:text="@string/texto_registro2"
+        android:textColor="@color/texto_registro"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_registro" />
+
+    <!-- Esta es la entrada de texto del Nombre -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LayoutNombre"
+        android:layout_width="284dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_registro2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cajaNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="@string/hintNombre"
+            android:textColorHint="@color/hint_registro"
+            android:textSize="16sp" />
+
+        <requestFocus />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Esta es la entrada de texto del Apellidos -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LayoutApellidos"
+        android:layout_width="284dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutNombre">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cajaApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="@string/hintApellidos"
+            android:textColorHint="@color/hint_registro"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Esta es la entrada de texto del e-mail -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LayoutEmail"
+        android:layout_width="284dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutApellidos">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cajaEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="@string/hintEmail"
+            android:textColorHint="@color/hint_registro"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Esta es la entrada de texto de la contraseña -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LayoutContraseña"
+        android:layout_width="284dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutEmail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cajaContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="@string/hintContraseña"
+            android:inputType="textPassword"
+            android:textColorHint="@color/hint_registro"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Este código es de tipo checkbox para poder seleccionarlo -->
+
+    <!-- Los siguientes 4 TextViews son los textos que acompañarán al checkbox -->
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/CheckBox"
+        android:textColor="@color/CheckBox_negro"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutContraseña" />
+
+    <!-- Este es el botón para acceder a la activity main -->
+
+    <TextView
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/CheckBox2"
+        android:textColor="@color/CheckBox_verde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutContraseña" />
+
+    <TextView
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CheckBox3"
+        android:textColor="@color/CheckBox_negro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/checkBox5" />
+
+    <TextView
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CheckBox4"
+        android:textColor="@color/CheckBox_verde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toEndOf="@+id/checkBox3"
+        app:layout_constraintTop_toTopOf="@+id/checkBox5" />
+
+    <TextView
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CheckBox5"
+        android:textColor="@color/CheckBox_negro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toEndOf="@+id/checkBox4"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    <Button
+        android:id="@+id/Enter"
+        android:layout_width="318dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/verde_email_cliente"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/boton_Enter"
+        android:textColor="@color/dunkel_text_boton"
+        app:cornerRadius="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+
+    <!-- Esta es la imagen del logo posiconada de fondo -->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="282dp"
+        android:layout_height="275dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_registro2"
+        app:layout_constraintVertical_bias="0.005"
+        app:srcCompat="@drawable/logo_verde_sin_fondo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Condiciones">
+
+
+    <!-- Este es el primer texto inicial de esta activity -->
+
+    <TextView
+        android:id="@+id/texto_InicialCondiciones"
+        android:layout_width="296dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/mangaka"
+        android:text="@string/text_InicialCondiciones"
+        android:textColor="@color/texto_registro"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Este es el scroll que contiene las condiciones -->
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="311dp"
+        android:layout_height="329dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_InicialCondiciones">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Este texto con las condiciones -->
+
+            <TextView
+                android:id="@+id/textCondicionesPrivacidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/text_CondicionesPrivacidad"
+                android:textColor="@color/texto_cliente1"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/scroll"
+                app:layout_constraintHorizontal_bias="0.857"
+                app:layout_constraintStart_toStartOf="@+id/scroll"
+                app:layout_constraintTop_toBottomOf="@+id/scroll" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Este es el botón para regresar a activity_registro -->
+
+    <Button
+        android:id="@+id/botonRegresar"
+        android:layout_width="318dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/verde_email_cliente"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/text_BotonRegresar"
+        android:textColor="@color/dunkel_text_boton"
+        app:cornerRadius="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scroll" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

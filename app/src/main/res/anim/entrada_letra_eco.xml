@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- TRASLADO DE LA LETRA ECO DESDE LA IZQUIERDA EXTERIOR DE LA PANTALLA -->
+
+    <translate
+        android:duration="1400"
+        android:fromXDelta="-600"
+        android:toXDelta="0"
+        />
+
+
+</set>

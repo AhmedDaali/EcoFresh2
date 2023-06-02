@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color2"
+    tools:context=".Hortalizas">
+
+    <TextView
+        android:id="@+id/texto_hortalizas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/mangaka"
+        android:text="@string/text_principal_hortalizas"
+        android:textColor="@color/texto_registro"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <AutoCompleteTextView
+        android:id="@+id/txt_auto"
+        android:layout_width="260dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hint_auto"
+        android:padding="16dp"
+        android:textColorHint="@color/texto_autocomplete"
+        android:textColorLink="#3C3A3A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_hortalizas" />
+
+    <ImageButton
+        android:id="@+id/boton_flechaH"
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Boton de flecha"
+        app:layout_constraintStart_toEndOf="@+id/txt_auto"
+        app:layout_constraintTop_toBottomOf="@+id/texto_hortalizas"
+        app:srcCompat="@drawable/flecha" />
+
+    <ImageButton
+        android:id="@+id/boton_zanahorias"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Boton de zanahorias"
+        app:layout_constraintEnd_toStartOf="@+id/boton_patatas"
+        app:layout_constraintHorizontal_bias="0.335"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_zanahorias"
+        app:srcCompat="@drawable/zanahorias" />
+
+    <ImageButton
+        android:id="@+id/boton_patatas"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="boton de patatas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/boton_zanahorias"
+        app:layout_constraintTop_toBottomOf="@+id/text_patatas"
+        app:srcCompat="@drawable/patatas" />
+
+    <ImageButton
+        android:id="@+id/boton_ajos"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Botón de ajos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/boton_cebollas"
+        app:layout_constraintTop_toBottomOf="@+id/text_ajos"
+        app:srcCompat="@drawable/ajos" />
+
+    <ImageButton
+        android:id="@+id/boton_cebollas"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Botón de cebollas"
+        app:layout_constraintEnd_toStartOf="@+id/boton_ajos"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@+id/boton_pimientos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_cebollas"
+        app:srcCompat="@drawable/cebollas" />
+
+
+    <ImageButton
+        android:id="@+id/boton_pimientos"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Botón de pimientos"
+        app:layout_constraintEnd_toStartOf="@+id/boton_tomates"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_pimientos"
+        app:srcCompat="@drawable/pimientos" />
+
+    <ImageButton
+        android:id="@+id/boton_tomates"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Botón de tomates"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@+id/boton_pimientos"
+        app:layout_constraintTop_toBottomOf="@+id/text_tomates"
+        app:srcCompat="@drawable/tomates" />
+
+    <TextView
+        android:id="@+id/text_zanahorias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/button_zanahorias"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/text_patatas"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_auto" />
+
+    <TextView
+        android:id="@+id/text_patatas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/transparent_imageButton"
+        android:text="@string/button_patatas"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_zanahorias"
+        app:layout_constraintTop_toBottomOf="@+id/txt_auto" />
+
+    <TextView
+        android:id="@+id/text_ajos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/button_ajos"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_cebollas"
+        app:layout_constraintTop_toBottomOf="@+id/boton_patatas" />
+
+    <TextView
+        android:id="@+id/text_cebollas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="42dp"
+        android:text="@string/button_cebollas"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/boton_ajos"
+        app:layout_constraintEnd_toStartOf="@+id/text_ajos"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_zanahorias"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text_pimientos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="18dp"
+        android:text="@string/button_pimientos"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/text_tomates"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_cebollas" />
+
+    <TextView
+        android:id="@+id/text_tomates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/button_tomates"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_pimientos"
+        app:layout_constraintTop_toBottomOf="@+id/boton_ajos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

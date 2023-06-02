@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VentaAguardar">
+
+    <!-- Esta es la imagen del logo posiconada de fondo -->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="282dp"
+        android:layout_height="275dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_verde_sin_fondo" />
+
+
+    <!-- Este es el primer texto inicial de esta activity -->
+
+    <TextView
+        android:id="@+id/texto_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/mangaka"
+        android:text="@string/text_venta"
+        android:textColor="@color/texto_registro"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Esta es la introducción de búsqueda de categoría que se autocompleta-->
+
+    <AutoCompleteTextView
+        android:id="@+id/text_auto"
+        android:layout_width="312dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/text_auto"
+        android:padding="16dp"
+        android:textColorHint="@color/texto_autocomplete"
+        android:textColorLink="@color/textColorLink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_registro" />
+
+    <requestFocus />
+
+    <!-- Esta es la entrada de texto de los productos -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LayoutProductos"
+        android:layout_width="306dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/text_auto"
+        app:layout_constraintStart_toStartOf="@+id/text_auto"
+        app:layout_constraintTop_toBottomOf="@+id/text_auto">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cajaProductos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="@string/text2_auto"
+            android:textColorHint="@color/hint_registro"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Esta es la entrada de texto de la cantidad -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LayoutCantidad"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/LayoutLocalidad"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutProductos">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cajaCantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/datosVenta"
+            android:hint="@string/hintCantidad"
+            android:textColorHint="@color/texto_autocomplete"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Esta es la entrada de texto del precio -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LayoutPrecio"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/LayoutProductos"
+        app:layout_constraintStart_toEndOf="@+id/LayoutCantidad"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutProductos">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cajaPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/datosVenta"
+            android:hint="@string/hintPrecio"
+            android:textColorHint="@color/hint_registro"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Esta es la entrada de texto de la localidad -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LayoutLocalidad"
+        android:layout_width="306dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/subirFoto"
+        app:layout_constraintStart_toStartOf="@+id/subirFoto"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutCantidad">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cajaLocalidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/datosVenta"
+            android:hint="@string/hintLocalidad"
+            android:textColorHint="@color/hint_registro"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Este es el botón para acceder a la activity de subir la foto -->
+
+    <Button
+        android:id="@+id/subirFoto"
+        android:onClick="openCamera"
+        android:layout_width="318dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/verde_email_cliente"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/subirFoto"
+        android:textColor="@color/dunkel_text_boton"
+        app:cornerRadius="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutLocalidad" />
+
+    <!-- Este es el botón para acceder a la activity_confirmaciónVenta -->
+
+    <Button
+        android:id="@+id/Confirmar"
+        android:layout_width="318dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/verde_email_cliente"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/confirmar"
+        android:textColor="@color/dunkel_text_boton"
+        app:cornerRadius="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subirFoto" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

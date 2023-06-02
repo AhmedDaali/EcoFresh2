@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UltimoPasoCompra">
+
+    <!-- Este es el primer texto inicial de esta activity -->
+
+    <TextView
+        android:id="@+id/texto_casi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/mangaka"
+        android:text="@string/text_casi"
+        android:textColor="@color/texto_registro"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- layout dentro del layout principal -->
+
+    <!-- Este es el botón para confirmar -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="320dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/texto_casi"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="29dp"
+        android:background="@drawable/borde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFormaPago">
+
+        <!-- Este es el primer texto de indicación de vendedor de esta activity -->
+
+        <TextView
+            android:id="@+id/textCantidad"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/text_cantidad"
+            android:textColor="@color/texto_cliente1"
+            android:textSize="16sp" />
+
+        <!-- Esta es la entrada de texto de la cantidad -->
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/textCantidad">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditTextCantidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/datosVenta"
+                android:hint="@string/hintCantidad"
+                android:textColorHint="@color/texto_autocomplete"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+       <!--
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/LayoutCantidad"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="@+id/LayoutLocalidad"
+            app:layout_constraintTop_toBottomOf="@+id/LayoutProductos">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cajaCantidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/datosVenta"
+                android:hint="@string/hintCantidad"
+                android:textColorHint="@color/texto_autocomplete"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        -->
+
+
+        <!-- Este es el segundo texto de indicación de cantidad de esta activity -->
+
+        <TextView
+            android:id="@+id/textProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textVendedor"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/text_vendedor"
+            android:textColor="@color/texto_cliente1"
+            android:textSize="16sp" />
+
+        <!-- Este es el tercer texto de indicación del producto de esta activity -->
+
+        <!-- Este es el cuarto texto de indicación del precio de esta activity -->
+
+        <TextView
+            android:id="@+id/textVendedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCantidad"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/text_producto"
+            android:textColor="@color/texto_cliente1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textPrecio"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textProducto"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/text_precio"
+            android:textColor="@color/texto_cliente1"
+            android:textSize="16sp" />
+
+        <!-- Este es el quinto texto de indicación de la localidad de esta activity -->
+
+        <TextView
+            android:id="@+id/textLocalidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textPrecio"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/text_localidad"
+            android:textColor="@color/texto_cliente1"
+            android:textSize="16sp" />
+
+        <!-- Este es la imagen del logo de esta activity -->
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="241dp"
+            android:layout_height="221dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:srcCompat="@drawable/logo_verde_sin_fondo" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="320dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/texto_casi"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/borde2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTituloDireccion">
+
+        <EditText
+            android:id="@+id/textDireccion"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="@string/text_calle"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textLugar" />
+
+
+        <EditText
+            android:id="@+id/textLugar"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textDireccion"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="@string/text_ciudad"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <EditText
+            android:id="@+id/textCp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textLugar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="@string/text_cp"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textLugar" />
+
+        <ImageView
+            android:id="@+id/logo2"
+            android:layout_width="312dp"
+            android:layout_height="158dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:srcCompat="@drawable/logo_verde_sin_fondo" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textFormaPago"
+        android:layout_width="164dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/text_pago"
+        android:textColor="@color/pago"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_casi"
+        tools:ignore="ExtraText" />
+
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="318dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignStart="@+id/relativeLayout"
+        android:layout_alignEnd="@+id/relativeLayout"
+        android:layout_marginStart="-9dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="-8dp"
+        android:backgroundTint="@color/verde_email_cliente"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/confirmar"
+        android:textColor="@color/dunkel_text_boton"
+        app:cornerRadius="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
+
+    <TextView
+        android:id="@+id/textTituloDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/text_titulo_direccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

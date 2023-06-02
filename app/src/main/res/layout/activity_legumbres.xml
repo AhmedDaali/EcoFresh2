@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color2"
+    tools:context=".Legumbres">
+
+    <TextView
+        android:id="@+id/texto_legumbres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/mangaka"
+        android:text="@string/text_principal_legumbres"
+        android:textColor="@color/texto_registro"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/txt_auto"
+        android:layout_width="260dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hint_auto"
+        android:padding="16dp"
+        android:textColorHint="@color/texto_autocomplete"
+        android:textColorLink="#3C3A3A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_legumbres" />
+
+    <ImageButton
+        android:id="@+id/boton_flechaL"
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Boton de flecha"
+        app:layout_constraintStart_toEndOf="@+id/txt_auto"
+        app:layout_constraintTop_toBottomOf="@+id/texto_legumbres"
+        app:srcCompat="@drawable/flecha" />
+
+
+    <ImageButton
+        android:id="@+id/boton_habas"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Boton de habas"
+        app:layout_constraintEnd_toStartOf="@+id/boton_garbanzos"
+        app:layout_constraintHorizontal_bias="0.335"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_habas"
+        app:srcCompat="@drawable/habas" />
+
+    <ImageButton
+        android:id="@+id/boton_garbanzos"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="boton de garbanzos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/boton_habas"
+        app:layout_constraintTop_toBottomOf="@+id/text_garbanzos"
+        app:srcCompat="@drawable/garbanzos" />
+
+    <ImageButton
+        android:id="@+id/boton_lentejas"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Botón de lentejas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/boton_guisantes"
+        app:layout_constraintTop_toBottomOf="@+id/text_lentejas"
+        app:srcCompat="@drawable/lentejas" />
+
+    <ImageButton
+        android:id="@+id/boton_guisantes"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Botón de guisantes"
+        app:layout_constraintEnd_toStartOf="@+id/boton_lentejas"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_guisantes"
+        app:srcCompat="@drawable/guisantes" />
+
+
+    <ImageButton
+        android:id="@+id/boton_alfalfa"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Botón de alfalfa"
+        app:layout_constraintEnd_toStartOf="@+id/boton_lupino"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_alfalfa"
+        app:srcCompat="@drawable/alfalfa" />
+
+    <ImageButton
+        android:id="@+id/boton_lupino"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Botón de lupino"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@+id/boton_alfalfa"
+        app:layout_constraintTop_toBottomOf="@+id/text_lupino"
+        app:srcCompat="@drawable/lupino" />
+
+    <TextView
+        android:id="@+id/text_habas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_habas"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/text_garbanzos"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_auto" />
+
+    <TextView
+        android:id="@+id/text_garbanzos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/transparent_imageButton"
+        android:text="@string/button_garbanzos"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_habas"
+        app:layout_constraintTop_toBottomOf="@+id/txt_auto" />
+
+    <TextView
+        android:id="@+id/text_lentejas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/button_lentejas"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_guisantes"
+        app:layout_constraintTop_toBottomOf="@+id/boton_garbanzos" />
+
+    <TextView
+        android:id="@+id/text_guisantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/button_guisantes"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/boton_lentejas"
+        app:layout_constraintEnd_toStartOf="@+id/text_lentejas"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_habas"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text_alfalfa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/button_alfalfa"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/text_lupino"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_guisantes" />
+
+    <TextView
+        android:id="@+id/text_lupino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_lupino"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_alfalfa"
+        app:layout_constraintTop_toBottomOf="@+id/boton_lentejas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

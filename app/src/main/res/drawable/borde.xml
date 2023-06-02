@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/fondo_verde"></solid>
+    <corners android:radius="20dp"/>
+
+    <!-- Si quisiera añadirle un borde -->
+    <!-- <stroke android:width="7dp" android:color="@color/btn_camera"/> -->
+
+    <!-- <Si quisiera redondear solo una esquina -->
+    <!-- <corners android:topLeftRadius="30sp" android:topRightRadius="30sp"/> -->
+
+
+</shape>

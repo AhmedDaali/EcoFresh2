@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "744495400271",
+    "firebase_url": "https://ecofresh-project-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "ecofresh-project",
+    "storage_bucket": "ecofresh-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744495400271:android:b13733c88eff80aa9b313a",
+        "android_client_info": {
+          "package_name": "com.example.ecofresh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "744495400271-3u5b83rie7j3l8iosi7r9pnrsce22nf1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ecofresh",
+            "certificate_hash": "929117ac4162167f3e82efabf053ebe6256a46a6"
+          }
+        },
+        {
+          "client_id": "744495400271-70rggl8ssjltjoh1krt4mf4q0lpvma6e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaBf-W1o_zNY1i1Hw2OCH3uBWYbarO_rg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "744495400271-70rggl8ssjltjoh1krt4mf4q0lpvma6e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,246 @@
+<resources>
+
+
+    <string name="app_name">EcoFresh</string>
+
+    <!-- Texto de la activity_splash -->
+
+    <string name="fresco">Fresh</string>
+    <string name="ecologico">Eco</string>
+
+    <!-- Texto de la activity_cliente -->
+
+    <string name="boton_google">Continuar con Google</string>
+    <string name="boton_facebook">Continuar con Facebook</string>
+    <string name="boton_email">Continuar con el e-mail</string>
+    <string name="texto_cliente1">¿Ya tienes cuenta?</string>
+    <string name="textLogin">Inicia sesión</string>
+
+    <!-- Texto de la activity_registro -->
+
+    <string name="texto_registro">¡Únete a</string>
+    <string name="texto_registro2">Ecofresh!</string>
+    <string name="hintNombre">Nombre*</string>
+    <string name="hintApellidos">Apellidos*</string>
+    <string name="hintEmail">E-mail*</string>
+    <string name="hintContraseña">Password*</string>
+    <string name="CheckBox">He leído y acepto las</string>
+    <string name="CheckBox2"> Condiciones de uso</string>
+    <string name="CheckBox3">y</string>
+    <string name="CheckBox4"> Política de privacidad</string>
+    <string name="CheckBox5"> de Ecofresh</string>
+    <string name="boton_Enter">Entrar</string>
+
+    <!-- Texto de la activity_login -->
+
+    <string name="texto_login">¡Bienvenido!</string>
+    <string name="texto_contraseña">¿Has olvidado tu contraseña?</string>
+
+    <!-- Texto de la activity_main -->
+
+    <string name="text1_main">¡Adelante!</string>
+    <string name="text2_main">¿Qué te gustaría hacer?</string>
+    <string name="boton1_main">Comprar</string>
+    <string name="boton2_main">Vender</string>
+    <string name="boton3_main">Mi cuenta</string>
+    <string name="boton4_main">salir</string>
+
+    <!-- Texto de la activity_selection -->
+
+    <string name="texto_selection">¡A tu elección!</string>
+    <string name="hint_auto">Busca tu producto</string>
+    <string name="button_fruta">Frutas</string>
+    <string name="button_verdura">Verduras</string>
+    <string name="button_legumbre">Legumbres</string>
+    <string name="button_hortaliza">Hortalizas</string>
+
+    <!-- Texto de la activity_venta -->
+
+    <string name="text_venta">¡Consigue dinero Fresh!</string>
+    <string name="text_auto">Categoría*</string>
+    <string name="hintCantidad">Cantidad en Kg*</string>
+    <string name="hintPrecio">Precio/Kg*</string>
+    <string name="text2_auto">Producto*</string>
+    <string name="hintLocalidad">Localidad*</string>
+    <string name="subirFoto">Subir foto</string>
+    <string name="confirmar">Confirmar</string>
+
+
+    <!-- Texto de la activity_camara -->
+
+    <string name="app_camara">MyCamara</string>
+    <string name="btnCamara">Camara</string>
+    <string name="iv_visor">visor</string>
+
+    <!-- Texto de la activity_confirm_venta -->
+
+    <string name="text_ConfirmVenta">¡Ya está a la venta!</string>
+    <string name="text_vendedor">Vendedor: </string>
+    <string name="text_cantidad">Cantidad: </string>
+    <string name="text_producto">Producto: </string>
+    <string name="text_precio">Precio/Kg: </string>
+    <string name="text_localidad">Localidad: </string>
+    <string name="text_menu">Menú principal</string>
+    <string name="text_salir">Salir</string>
+
+    <!-- Texto de la activity_Condiciones -->
+
+    <string name="text_InicialCondiciones">Condiciones de uso y política de privacidad</string>
+    <string name="text_CondicionesPrivacidad">Bienvenido a EcoFresh. Al utilizar la aplicación, usted acepta las siguientes condiciones de uso y política de privacidad:\n
+
+1. Condiciones de uso\n
+
+a. Usted es responsable de proporcionar información precisa y actualizada sobre su dirección de envío y los productos que desea comprar.\n
+
+b. Usted se compromete a utilizar la aplicación solo para fines legales y de acuerdo con estos términos.\n
+
+c. Usted acepta no utilizar la aplicación de ninguna manera que pueda dañar, deshabilitar, sobrecargar o comprometer la seguridad de la aplicación o interferir con el uso y disfrute de la aplicación por parte de otros usuarios.\n
+
+d. Usted acepta no utilizar la aplicación para enviar correo no solicitado o spam.\n
+
+e. Usted acepta no utilizar la aplicación para recopilar información personal de otros usuarios sin su consentimiento.\n
+
+f. Nos reservamos el derecho de cancelar cualquier pedido en cualquier momento por cualquier motivo.\n
+
+g. Nos reservamos el derecho de modificar o interrumpir la aplicación en cualquier momento sin previo aviso.\n
+
+h. No somos responsables de ningún retraso o falla en la entrega de los productos debido a circunstancias fuera de nuestro control.\n
+
+2. Política de privacidad
+
+a. Recopilamos información personal, como su nombre, dirección y dirección de correo electrónico, solo con su consentimiento.\n
+
+b. Utilizamos esta información para procesar su pedido y para enviarle información sobre promociones y descuentos relacionados con la aplicación.\n
+
+c. No vendemos, alquilamos ni divulgamos su información personal a terceros sin su consentimiento, excepto en la medida en que sea necesario para procesar su pedido.\n
+
+d. Utilizamos medidas de seguridad adecuadas para proteger su información personal.\n
+
+e. No recopilamos ni almacenamos información de tarjetas de crédito en nuestra aplicación. Todas las transacciones de pago se realizan a través de un proveedor de pago seguro.\n
+
+f. Utilizamos cookies para mejorar su experiencia en la aplicación. Puede optar por desactivar las cookies en su navegador.\n
+
+g. Usted tiene derecho a acceder, rectificar y eliminar su información personal. Puede hacerlo enviando un correo electrónico a nuestro servicio de atención al cliente.\n
+
+Al utilizar la aplicación, usted acepta estas condiciones de uso y política de privacidad. Si tiene alguna pregunta o inquietud, no dude en ponerse en contacto con nuestro servicio de atención al cliente. Gracias por elegir EcoFresh.</string>
+    <string name="text_BotonRegresar">Regresar</string>
+
+
+    <!-- Texto de la activity_cuenta_usuario -->
+
+    <string name="text_trans">TRANSACCIONES</string>
+    <string name="text_compras">Mis compras                                                             ></string>
+    <string name="text_ventas">Mis ventas                                                                 ></string>
+    <string name="text_misproductos">Productos a la venta                                               ></string>
+    <string name="text_datos">CUENTA</string>
+    <string name="text_User">Tus datos</string>
+    <string name="text_nombre">Nombre: </string>
+    <string name="text_apellidos">Apellidos: </string>
+    <string name="text_direccion">Dirección: </string>
+    <string name="text_telefono">Telefono: </string>
+    <string name="text_email">Email: </string>
+    <string name="text_editar">Editar</string>
+
+
+    <!-- Texto de la activity_forgot_password -->
+
+    <string name="ingresa_tu_correo">INGRESA TU CORREO</string>
+    <string name="recupera_tu_contrase_a">Recupera tu contraseña</string>
+    <string name="recuperar">RECUPERAR</string>
+
+
+    <!-- Texto de la activity_edicion -->
+
+    <string name="text_modifica">Modifica tus datos</string>
+    <string name="text_guarda">Guardar</string>
+    <string name="text_nomb">Nombre:</string>
+    <string name="text_apel">Apellidos:</string>
+    <string name="text_emai">Email:</string>
+    <string name="text_tele">Teléfono:</string>
+    <string name="text_dire">Dirección:</string>
+    <string name="text_loca">Localidad:</string>
+
+    <!-- Texto de la activity_compras/ventas_realizadas -->
+
+    <string name="text_ventas_realizadas">Estas han sido tus ventas</string>
+    <string name="text_compras_realizadas">Estas han sido tus compras</string>
+    <string name="text_boton_retirar">Retirar</string>
+
+    <!-- Texto de la activity_frutas -->
+
+    <string name="text_principal_frutas">¡Frutitas freshcas!</string>
+    <string name="button_naranjas">Naranjas</string>
+    <string name="button_platanos">Platanos</string>
+    <string name="button_mandarinas">Mandarinas</string>
+    <string name="button_fresas">Fresas</string>
+    <string name="button_manzanas">Manzanas</string>
+    <string name="button_uvas">Uvas</string>
+
+    <!-- Texto de la activity_verduras -->
+
+    <string name="text_principal_verduras">¡Verduras!</string>
+    <string name="button_espinacas">Espinacas</string>
+    <string name="button_lechuga">Lechuga</string>
+    <string name="button_repollo">Repollo</string>
+    <string name="button_brocoli">Brocoli</string>
+    <string name="button_apio">Apio</string>
+    <string name="button_grelos">Grelos</string>
+
+    <!-- Texto de la activity_Legumbres -->
+
+    <string name="text_principal_legumbres">¡Legumbres!</string>
+    <string name="button_habas">Habas</string>
+    <string name="button_garbanzos">Garbanzos</string>
+    <string name="button_lentejas">Lentejas</string>
+    <string name="button_guisantes">Guisantes</string>
+    <string name="button_alfalfa">Alfalfa</string>
+    <string name="button_lupino">Lupino</string>
+
+    <!-- Texto de la activity_Hortalizas -->
+
+    <string name="text_principal_hortalizas">¡Hortalizas!</string>
+    <string name="button_zanahorias">Zanahorias</string>
+    <string name="button_patatas">Patatas</string>
+    <string name="button_ajos">Ajos</string>
+    <string name="button_cebollas">Cebollas</string>
+    <string name="button_pimientos">Pimientos</string>
+    <string name="button_tomates">Tomates</string>
+
+    <!-- Texto de la activity_muestrario -->
+
+    <string name="text_lista_productos">Productos seleccionados</string>
+
+    <!-- Texto de la activity_ultimo_paso -->
+
+    <string name="text_casi">¡Ya casi está!</string>
+    <string name="text_pago">El pago se realizará \na contra reembolso</string>
+    <string name="hintCantidadFinal">             Kg</string>
+    <string name="text_titulo_direccion">Datos de dirección*</string>
+    <string name="text_calle">Calle/Avd*</string>
+    <string name="text_ciudad">Localidad*</string>
+    <string name="text_cp">Cp*</string>
+
+
+    <!-- Texto de la activity_confirm_compra -->
+
+    <string name="text_final">¡Compra realizada!</string>
+    <string name="text_final2">¡GRACIAS!</string>
+    <string name="text_comprador">Comprador:</string>
+    <string name="text_calle2">Calle/Avd</string>
+    <string name="text_ciudad2">Localidad</string>
+    <string name="text_cp2">Cp</string>
+    <string name="continua_comprando">Continua comprando</string>
+
+    <!-- Texto de la activity_productos_venta -->
+
+    <string name="text_productos_venta">¡A la venta!</string>
+    <string name="total">Total:</string>
+
+    <!-- Texto de la activity_imagen_compra -->
+
+    <string name="imagen_camara">Este es el producto</string>
+    <string name="boton_imagen_compra">Comprar</string>
+    <string name="boton_regreso_imagen">Regresar</string>
+
+
+</resources>

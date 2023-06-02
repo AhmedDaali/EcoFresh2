@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color2"
+    tools:context=".Frutas">
+
+
+    <TextView
+        android:id="@+id/texto_frutas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/mangaka"
+        android:text="@string/text_principal_frutas"
+        android:textColor="@color/texto_registro"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.292"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <AutoCompleteTextView
+        android:id="@+id/txt_auto"
+        android:layout_width="260dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/hint_auto"
+        android:padding="16dp"
+        android:textColorHint="@color/texto_autocomplete"
+        android:textColorLink="#3C3A3A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_frutas" />
+
+    <ImageButton
+        android:id="@+id/boton_flechaF"
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Boton de flecha"
+        app:layout_constraintStart_toEndOf="@+id/txt_auto"
+        app:layout_constraintTop_toBottomOf="@+id/texto_frutas"
+        app:srcCompat="@drawable/flecha" />
+
+
+    <ImageButton
+        android:id="@+id/boton_platanos"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Boton de platanos"
+        app:layout_constraintEnd_toStartOf="@+id/boton_naranjas"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_platanos"
+        app:srcCompat="@drawable/platanos" />
+
+    <ImageButton
+        android:id="@+id/boton_naranjas"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="boton de naranjas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/boton_platanos"
+        app:layout_constraintTop_toBottomOf="@+id/text_naranjas"
+        app:srcCompat="@drawable/naranjas" />
+
+    <ImageButton
+        android:id="@+id/boton_fresas"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Botón de fresas"
+        app:layout_constraintEnd_toStartOf="@+id/boton_mandarinas"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_fresas"
+        app:srcCompat="@drawable/fresas" />
+
+    <ImageButton
+        android:id="@+id/boton_mandarinas"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Botón de mandarinas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/boton_fresas"
+        app:layout_constraintTop_toBottomOf="@+id/text_mandarinas"
+        app:srcCompat="@drawable/mandarinas" />
+
+
+
+    <ImageButton
+        android:id="@+id/boton_uvas"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Botón de uvas"
+        app:layout_constraintEnd_toStartOf="@+id/boton_manzanas"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_uvas"
+        app:srcCompat="@drawable/uvas" />
+
+
+    <ImageButton
+        android:id="@+id/boton_manzanas"
+        android:layout_width="128dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent_imageButton"
+        android:contentDescription="Botón de manzanas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/boton_uvas"
+        app:layout_constraintTop_toBottomOf="@+id/text_manzanas"
+        app:srcCompat="@drawable/manzanas" />
+
+    <TextView
+        android:id="@+id/text_platanos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/button_platanos"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/text_naranjas"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_auto" />
+
+    <TextView
+        android:id="@+id/text_naranjas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/transparent_imageButton"
+        android:text="@string/button_naranjas"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_platanos"
+        app:layout_constraintTop_toBottomOf="@+id/txt_auto" />
+
+    <TextView
+        android:id="@+id/text_mandarinas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_mandarinas"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_fresas"
+        app:layout_constraintTop_toBottomOf="@+id/boton_naranjas" />
+
+    <TextView
+        android:id="@+id/text_fresas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_fresas"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/boton_mandarinas"
+        app:layout_constraintEnd_toStartOf="@+id/text_mandarinas"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_platanos"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/text_uvas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_uvas"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/text_manzanas"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_fresas" />
+
+    <TextView
+        android:id="@+id/text_manzanas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_manzanas"
+        android:textColor="@color/hint_registro"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_uvas"
+        app:layout_constraintTop_toBottomOf="@+id/boton_mandarinas" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

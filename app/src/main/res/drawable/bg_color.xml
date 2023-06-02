@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- A continuación indicamos los colores que utilizará el fondo de la activity_splash -->
+
+    <gradient
+        android:startColor="@color/white"
+        android:centerColor="@color/center"
+        android:endColor="@color/verde"
+        android:type="linear"
+        android:angle="135"/>
+
+</shape>
