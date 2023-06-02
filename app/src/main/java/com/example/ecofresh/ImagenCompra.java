@@ -32,7 +32,7 @@ public class ImagenCompra extends AppCompatActivity {
     FirebaseAuth mAuth;
     FirebaseFirestore db;
 
-    private String comprador;
+    private String comprador, emailVendedor,nombre, categoria, urlImagen;
     private String vendedor;
     private String nombreProducto;
     private String localidad;
@@ -71,7 +71,9 @@ public class ImagenCompra extends AppCompatActivity {
         nombreProducto = getIntent().getStringExtra("producto");
         localidad = getIntent().getStringExtra("localidad");
         precio = getIntent().getDoubleExtra("precio",0.0d);
-        imageUrl = getIntent().getStringExtra("photoUrls");
+        //imageUrl = getIntent().getStringExtra("photoUrls");
+        emailVendedor = getIntent().getStringExtra("emailVendedor");
+        categoria = getIntent().getStringExtra("categoria");
 
         // 1 Guardamos la referencia del botón de confirmar
         botonComprar = findViewById(R.id.boton_confirmar_compra);
@@ -80,7 +82,7 @@ public class ImagenCompra extends AppCompatActivity {
         imageProducto = findViewById(R.id.imageView3);
 
         // Obtener la URL de la imagen del Intent
-        String imageUrl = getIntent().getStringExtra("photoUrls");
+        imageUrl = getIntent().getStringExtra("photoUrls");
 
         // Cargar la imagen utilizando Picasso
         Picasso.get().load(imageUrl).into(imageProducto);
@@ -92,11 +94,13 @@ public class ImagenCompra extends AppCompatActivity {
 
                 Intent intent = new Intent(ImagenCompra.this, UltimoPasoCompra.class);
 
+                intent.putExtra("emailVendedor",emailVendedor);
                 intent.putExtra("producto", nombreProducto);
                 intent.putExtra("localidad", localidad);
                 intent.putExtra("precio", precio);
                 intent.putExtra("vendedor", vendedor);
-                intent.putExtra("photoUrls", imageUrl);
+                intent.putExtra("photoUrls",urlImagen);
+                intent.putExtra("categoria",categoria);
 
                 // Arrancamos el evento que acabamos de crear
                 startActivity(intent);
