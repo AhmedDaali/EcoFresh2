@@ -12,6 +12,7 @@
         android:id="@+id/text_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="44dp"
         android:fontFamily="@font/mangaka"
         android:text="@string/text_compras_realizadas"
@@ -24,14 +25,14 @@
 
     <ListView
         android:id="@+id/listViewComprasRealizadas"
-        android:layout_width="match_parent"
-        android:layout_height="602dp"
+        android:layout_width="407dp"
+        android:layout_height="491dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.458" />
 
     <ImageView
         android:id="@+id/logo"
@@ -42,5 +43,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_user"
         app:srcCompat="@drawable/logo_verde_sin_fondo" />
+
+    <Button
+        android:id="@+id/volver2"
+        android:layout_width="318dp"
+        android:layout_height="58dp"
+        android:backgroundTint="@color/verde_email_cliente"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/text_BotonRegresar"
+        android:textColor="@color/dunkel_text_boton"
+        app:cornerRadius="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewComprasRealizadas"
+        app:layout_constraintVertical_bias="0.231"
+        app:strokeColor="@color/borde_boton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

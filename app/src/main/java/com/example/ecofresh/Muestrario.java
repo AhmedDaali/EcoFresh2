@@ -134,7 +134,7 @@ public class Muestrario extends AppCompatActivity {
                                     "  Vendedor:    " + vendedor + "\n" +
                                     "  Localidad:    " + localidad + "\n" +
                                     "  Stock:           " + cantidad + "\n" +
-                                    "  Email:           " + emailVendedor + "\n" +
+                                    //"  Email:           " + emailVendedor + "\n" +
                                     "  Precio:          " + precio;
 
                             // Agrega la cadena a la lista
