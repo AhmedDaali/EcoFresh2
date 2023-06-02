@@ -40,7 +40,7 @@ public class UltimoPasoCompra extends AppCompatActivity {
     private EditText cantidadEditText, calleEditText, localidadEditext, cpEditext;
     private TextView productoTextView, vendedorTextView, precioTextView, localidadTextView;
 
-    private String nombreProducto, vendedor, comprador, localidad, calle, cp,localidadEnvio, imageUrl, email, categoria;
+    private String nombreProducto, vendedor, comprador, localidad, calle, cp,localidadEnvio, imageUrl, emailComprador, emailVendedor, categoria;
 
     private double total, precio, cantidad;
 
@@ -82,7 +82,7 @@ public class UltimoPasoCompra extends AppCompatActivity {
         vendedor = getIntent().getStringExtra("vendedor");
         categoria = getIntent().getStringExtra("categoria");
         imageUrl = getIntent().getStringExtra("photoUrls");
-        cp = getIntent().getStringExtra("cp");
+        emailVendedor = getIntent().getStringExtra("emailVendedor");
 
         //Colocar los datos de la venta en los textView
         productoTextView.setText("Producto:   " + nombreProducto);
@@ -117,7 +117,7 @@ public class UltimoPasoCompra extends AppCompatActivity {
                 DocumentSnapshot document = task.getResult();
                 if (document.exists()) {
                     // Obtener los datos del documento y actualizar los TextView correspondientes
-                    email = document.getString("email");
+                    emailComprador = document.getString("email");
                     comprador = document.getString("nombre")+" "+document.getString("apellidos");
                 }
             } else {
@@ -164,7 +164,7 @@ public class UltimoPasoCompra extends AppCompatActivity {
 
         // Crea un objeto Compra con los datos de la compra
         total = precio * cantidad;
-        Compra compra = new Compra(cantidad, total, producto, comprador, vendedor, direccionEnvio);
+        Compra compra = new Compra(cantidad, total, producto, comprador, vendedor, direccionEnvio, emailComprador, emailVendedor);
 
 
         // Obtener referencia a la colección de comprasRealizadas en Firestore
