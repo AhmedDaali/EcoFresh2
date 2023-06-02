@@ -78,7 +78,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/LayoutCantidad"
         android:layout_width="160dp"
-        android:layout_height="50dp"
+        android:layout_height="68dp"
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="@+id/LayoutLocalidad"
         app:layout_constraintTop_toBottomOf="@+id/LayoutProductos">
@@ -99,7 +99,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/LayoutPrecio"
         android:layout_width="140dp"
-        android:layout_height="50dp"
+        android:layout_height="68dp"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="@+id/LayoutProductos"
         app:layout_constraintStart_toEndOf="@+id/LayoutCantidad"
@@ -120,7 +120,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/LayoutLocalidad"
         android:layout_width="306dp"
-        android:layout_height="50dp"
+        android:layout_height="68dp"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="@+id/subirFoto"
         app:layout_constraintStart_toStartOf="@+id/subirFoto"
