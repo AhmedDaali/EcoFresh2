@@ -157,7 +157,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="61dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="61dp"
         android:fontFamily="@font/mangaka"
         android:text="@string/text_ConfirmVenta"
