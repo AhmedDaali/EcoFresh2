@@ -241,6 +241,12 @@ Al utilizar la aplicación, usted acepta estas condiciones de uso y política de
     <string name="imagen_camara">Este es el producto</string>
     <string name="boton_imagen_compra">Comprar</string>
     <string name="boton_regreso_imagen">Regresar</string>
+    <string name="localidad">Localidad</string>
+    <string name="direcci_n">Dirección</string>
+    <string name="tel_fono">Teléfono</string>
+    <string name="email">Email</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="nombre">Nombre</string>
 
 
 </resources>
