@@ -104,7 +104,7 @@ public class Compras extends AppCompatActivity {
                             String compra = "  Producto:     " + nombreProducto + "\n" +
                                     "  Localidad:    " + localidad + "\n" +
                                     "  Vendedor:    " + vendedor + "\n" +
-                                    "  Cantidad:     " + cantidad + "\n" +
+                                    "  Cantidad:     " + cantidad +"Kg"+ "\n" +
                                     "  Precio:          " + precio + "€"+ "\n" +
                                     "  Total:            " + total + "€";
 

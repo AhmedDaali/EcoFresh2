@@ -8,14 +8,13 @@
 
     <TextView
         android:id="@+id/textViewVenta"
-        android:layout_width="412dp"
-        android:layout_height="121dp"
-        android:layout_marginTop="4dp"
+        android:layout_height="300dp"
+        android:layout_width="375dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-black"
-        android:text="TextViewCantidad"
         android:textSize="20sp"
+        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
