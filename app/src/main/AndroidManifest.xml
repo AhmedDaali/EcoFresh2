@@ -16,6 +16,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EcoFresh"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.firebase.firebase-perf.provider"
+            android:value="com.google.firebase.perf.provider.FirebasePerfProvider" />
+
+        <activity
+            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            tools:ignore="MissingClass" />
+
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
         <activity
             android:name=".ImagenCompra"
             android:exported="false" />
@@ -93,7 +111,16 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true" /> <!-- Agrega esta etiqueta de proveedor -->
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="com.example.ecofresh" />
+            </intent-filter>
+        </activity>
+            /> <!-- Agrega esta etiqueta de proveedor -->
+
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
             android:authorities="${applicationId}.firebaseinitprovider"

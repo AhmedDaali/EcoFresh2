@@ -43,6 +43,12 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth'
     implementation 'com.google.firebase:firebase-auth:22.0.0'
 
+    implementation 'com.google.firebase:firebase-auth:20.0.1'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+
+
+
     // Also add the dependency for the Google Play services library and specify its version
     implementation 'com.google.android.gms:play-services-auth:20.5.0'
 
@@ -54,7 +60,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore'
 
     //Dependencias de internet
-    // implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
 
     //Almacen de archivos
     implementation 'com.google.firebase:firebase-storage:20.0.0'
